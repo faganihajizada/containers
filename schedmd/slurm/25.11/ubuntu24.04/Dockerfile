@@ -215,6 +215,7 @@ COPY \
   files/etc/supervisor/conf.d/sssd.conf \
   /etc/supervisor/conf.d/
 COPY files/usr/local/bin/fakesystemd.sh /usr/local/bin/
+COPY files/usr/local/bin/slurmd-liveness.sh /usr/local/bin/
 COPY files/usr/local/bin/slurmd-entrypoint.sh /usr/local/bin/entrypoint.sh
 
 EXPOSE 6818/tcp 22/tcp
